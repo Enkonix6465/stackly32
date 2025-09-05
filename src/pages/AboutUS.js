@@ -19,7 +19,7 @@ const AboutUs = () => {
   const [isVisionVisible, setIsVisionVisible] = useState(false);
   const visionRef = useRef(null);
 
-  const [ setIsStoryVisible] = useState(false);
+  const [isStoryVisible, setIsStoryVisible] = useState(false);
   const storyRef = useRef(null);
   const [storyAnimated, setStoryAnimated] = useState(false); // <-- Add this
 
@@ -111,28 +111,28 @@ const AboutUs = () => {
   ], []);
 
   // Story timeline data
-  // const timelineData = [
-  //   {
-  //     year: "2015",
-  //     title: "The Beginning",
-  //     description: "Founded as a small startup with a big idea: to make high-end digital marketing accessible to all businesses."
-  //   },
-  //   {
-  //     year: "2018",
-  //     title: "Rapid Expansion",
-  //     description: "We grew our team from a handful of experts to a full-service agency, expanding our offerings to include SEO and PPC."
-  //   },
-  //   {
-  //     year: "2021",
-  //     title: "Industry Recognition",
-  //     description: "Our work on several key projects earned us 'Agency of the Year' for our innovative and results-driven campaigns."
-  //   },
-  //   {
-  //     year: "2024",
-  //     title: "Global Reach",
-  //     description: "We opened our first international office, marking a new chapter in our mission to help brands succeed worldwide."
-  //   }
-  // ];
+  const timelineData = [
+    {
+      year: "2015",
+      title: "The Beginning",
+      description: "Founded as a small startup with a big idea: to make high-end digital marketing accessible to all businesses."
+    },
+    {
+      year: "2018",
+      title: "Rapid Expansion",
+      description: "We grew our team from a handful of experts to a full-service agency, expanding our offerings to include SEO and PPC."
+    },
+    {
+      year: "2021",
+      title: "Industry Recognition",
+      description: "Our work on several key projects earned us 'Agency of the Year' for our innovative and results-driven campaigns."
+    },
+    {
+      year: "2024",
+      title: "Global Reach",
+      description: "We opened our first international office, marking a new chapter in our mission to help brands succeed worldwide."
+    }
+  ];
   
   // Animated numbers for vision stats
   const [visionCounts, setVisionCounts] = useState(visionData.map(() => 0));
